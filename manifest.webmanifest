@@ -1,0 +1,14 @@
+{
+  "name": "MH SOLAR Daily Rates",
+  "short_name": "MH SOLAR Rates",
+  "description": "Premium Pakistan solar market daily rates by MH SOLAR.",
+  "start_url": "./index.html#home",
+  "display": "standalone",
+  "background_color": "#071c35",
+  "theme_color": "#071c35",
+  "orientation": "portrait-primary",
+  "lang": "en-PK",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
