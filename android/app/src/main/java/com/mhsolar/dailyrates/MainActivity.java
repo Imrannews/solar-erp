@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
     s.setAllowFileAccess(true);
     web.setWebViewClient(new WebViewClient());
     web.setWebChromeClient(new WebChromeClient());
-    web.loadUrl("https://imrannews.github.io/solar-erp/");
+    web.loadUrl("https://raw.githubusercontent.com/Imrannews/solar-erp/main/index.html");
     setContentView(web);
   }
   @Override public void onBackPressed() { if (web.canGoBack()) web.goBack(); else super.onBackPressed(); }
