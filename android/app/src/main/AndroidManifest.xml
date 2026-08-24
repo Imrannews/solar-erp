@@ -1,6 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
-    <application android:allowBackup="true" android:label="MH SOLAR Daily Rates" android:theme="@style/AppTheme">
+    <application
+        android:allowBackup="true"
+        android:label="MH SOLAR Daily Rates"
+        android:theme="@style/AppTheme">
+        <!-- Replace this sample AdMob App ID with your production App ID before release. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
