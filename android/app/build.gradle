@@ -11,6 +11,22 @@ android {
         versionCode 2
         versionName '1.1.0'
     }
+
+    signingConfigs {
+        release {
+            storeFile file(System.getenv('MH_KEYSTORE_FILE') ?: 'mhsolar-upload.jks')
+            storePassword System.getenv('MH_KEYSTORE_PASSWORD') ?: 'MHsolar2026!'
+            keyAlias System.getenv('MH_KEY_ALIAS') ?: 'mhsolar'
+            keyPassword System.getenv('MH_KEY_PASSWORD') ?: 'MHsolar2026!'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
 }
 
 dependencies {
